@@ -28,7 +28,7 @@ server {
 		## See the map directive above where this variable is defined.
 		add_header 'Docker-Distribution-Api-Version' $docker_distribution_api_version;
 
-		proxy_read_timeout                  900;
+		proxy_read_timeout 900;
 		include proxy_params;
 		proxy_pass http://localhost:5000;
 	}

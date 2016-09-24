@@ -24,7 +24,7 @@ spec:
         volumeMounts:
         - name: data
           mountPath: /var/lib/registry
-      - image: {{ registry_nginx_proxy_image }}
+      - image: registry-nginx-proxy:0.1
         name: registry-nginx-proxy
         ports:
         - containerPort: 80
